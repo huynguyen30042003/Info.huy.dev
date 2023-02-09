@@ -1,24 +1,193 @@
-import logo from './logo.svg';
+import imgUser from './img/img-user.png'
+import viewNote from './img/view-note.png'
+import imgUser1 from './img/img-user-1.png'
+import convert from './img/convert.png'
+import post from './img/post.png'
+import linkFb from './img/linkFb.png'
+import linkZalo from './img/linkZalo.png'
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='center'>
+      <div className='myCv'>
+        <div className='header'>
+          <div className='user'>
+            <a>Huy</a>
+          </div>
+          <div className='nav'>
+            <a className='toInformation'>Information</a>
+            <a className='toProject'>Project</a>
+            <a className='toContact'>Contact</a>
+            <a className='toFooter'>Footer</a>
+          </div>
+          <div className='contact'>
+            <button className='button-contact '>Contact me</button>
+        </div>
+        </div>
+          <div className='content'>
+            <div className='banner'>
+              <div className='img-user w3-animate-top'>
+                <img src={imgUser}></img>
+              </div>
+              {/* <div className='user-name'>
+                <a>Nguyễn Khoa Nhật Huy</a>
+              </div> */}
+            </div>
+            <div id='introduction'>
+              <div className='left-intro '>
+                <img src={imgUser1}></img>
+              </div>
+              <div className='right-intro'>
+                <div className='name'>
+                  <a>Name :</a>
+                </div>
+                <div className='user-name'>
+                  <a>Nguyễn Khoa Nhật Huy</a>
+                </div>
+                <div className='achievement'>
+                  <a>Achievement :</a>
+                </div>
+                <div className='box-achieve'> 
+                  <div className='achieve achieve-1'>HTML</div>
+                  <div className='achieve achieve-2'>CSS</div>
+                  <div className='achieve achieve-3'>REACTjs</div>
+                  {/* <div className='achieve achieve-4'></div>
+                  <div className='achieve achieve-5'></div>
+                  <div className='achieve achieve-6'></div> */}
+                </div>
+              </div>
+            </div>
+            <div id='Projects'>
+              <a className='pj-a'>My Projects</a>
+              <div className='project project-1'>
+                <div className='info'>
+                  <div className='info-pj'>
+                    <a>Notes</a>
+                    <div className='user-by'>
+                      <div className='user-by1'>HTML</div>
+                      <div className='user-by2'>CSS</div>
+                      <div className='user-by3'>REACTjs</div>
+                    </div>
+                    <div className='view'>
+                      <a>View now</a>
+                    </div>
+                  </div>
+                </div>
+                <div className='view-pj'>
+                  <img src={viewNote}></img>
+                </div>
+              </div>
+              <div className='project project-2'>
+              <div className='info'>
+                  <div className='info-pj'>
+                    <a>Convert</a>
+                    <div className='user-by'>
+                      <div className='user-by1'>HTML</div>
+                      <div className='user-by2'>CSS</div>
+                      <div className='user-by3'>REACTjs</div>
+                    </div>
+                    <div className='view'>
+                      <a>View now</a>
+                    </div>
+                  </div>
+                </div>
+                <div className='view-pj'>
+                  <img src={convert}></img>
+                </div>
+              </div>
+              <div className='project project-3'>
+              <div className='info'>
+                  <div className='info-pj'>
+                    <a>Post-demo</a>
+                    <div className='user-by'>
+                      <div className='user-by1'>HTML</div>
+                      <div className='user-by2'>CSS</div>
+                      <div className='user-by3'>REACTjs</div>
+                    </div>
+                    <div className='view'>
+                      <a>View now</a>
+                    </div>
+                  </div>
+                </div>
+                <div className='view-pj'>
+                  <img src={post}></img>
+                </div>
+              </div>
+            </div>
+            <div id='Contact-information'>
+            <div className='boxContact'>
+            <a>Contact</a>
+            
+            <div className='typeOfContact'>
+              <div className='con Contact-fb click-contact'>
+                <i className="fa-brands fa-facebook"></i>
+                <a>Facebook</a>
+              </div>
+              <div className='con Contact-email'>
+                <i className="fa-solid fa-envelope"></i>
+                <a>Email</a>
+              </div>
+              <div className='con Contact-Zalo'>
+                <a>Zalo</a>
+              </div>
+            </div>
+              
+              <div className='link link-fb'>
+                <img src={linkFb}></img>
+              </div>
+              <div className='link link-Email'>
+                <img src={linkZalo}></img>
+              </div>
+              {/* <div className='link link-fb'>
+                <img src={linkEmail}></img>
+              </div> */}
+
+            </div>
+            <div className='other-contact'>
+              <a >Number phone:<br></br> (+84)961061430</a>
+              <div className='email-add'>
+
+              <a >Email:<br></br> nguyenkhoanhathuy@gmail.com</a>
+              </div>
+            </div>
+            </div>
+            <div className='Footer'>
+              <div className='footer-left'>
+                  <a>nguyenkhoanhathuy</a>
+                  <div className='send'>
+                  <i class="fa-regular fa-copyright"></i>
+                  <a>2023, Built and designed by Huy</a>
+                </div>
+              </div>
+              <div className='footer-right'>
+                <span> Links</span>
+                <div className='footer-links'>
+                  <a href='#introduction'>Information</a>
+                  <a href='#Projects'>Project</a>
+                  <a href='#Contact-information'>Contact</a>
+                </div>
+              </div>
+              <div className='get-in-touch'>
+                <span >Get in touch</span>
+                <div className='get-in-touch-item'>
+                <a target="_blank" href='https://www.facebook.com/avoidshift3004/'>Facebook</a>
+                <a href='#Contact-information'>Email</a>
+                  
+                </div>
+              </div>
+            <div href='#introduction' className='up'><a href='#introduction'>
+
+            <i  className=" fa-solid fa-angles-up"></i>
+            </a>
+
+            </div>
+            </div>
+          </div>
+        </div>  
+      </div>        
+
+    </>
   );
 }
 
