@@ -397,7 +397,7 @@ a{
         width: 1008px;
         padding: 0 8px 16px 8px;
         background-color: #cdf1ff;
-        height: 2480px;
+        height: 3388px;
         /* height: 2000px; */
         /* border: 1px solid #000; */
     
@@ -470,6 +470,9 @@ a{
 
 }
 @media screen and (max-width:31.25em){
+    .myCv{
+        height: 3260px;
+    }
     .nav{
         display: none;
     }
