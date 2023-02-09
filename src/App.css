@@ -465,7 +465,8 @@ a{
     }
 
     .img-user img{
-        width: 50px;
+        width: 90vw;
+        height: 90vw;
     }
 
 }
