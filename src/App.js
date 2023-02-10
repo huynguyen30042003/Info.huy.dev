@@ -5,8 +5,34 @@ import convert from './img/convert.png'
 import post from './img/post.png'
 import linkFb from './img/linkFb.png'
 import linkZalo from './img/linkZalo.png'
+import linkEmail from './img/linkEmail.png'
 import './App.css';
+import { useState } from 'react'
 function App() {
+  const [isFacebook,setIsFacebook]=useState(1);
+  const [isEmail,setIsEmail]=useState(0);
+  const [isZalo,setIsZalo]=useState(0);
+  const clickFacebook =()=>{
+    setIsFacebook(1);
+    setIsEmail(0);
+    setIsZalo(0);
+    console.log('fb');
+  }
+  const clickEmail =()=>{
+    setIsFacebook(0);
+    setIsEmail(1);
+    setIsZalo(0);
+    console.log('email');
+  }
+  const clickZalo=()=>{
+    setIsFacebook(0);
+    setIsEmail(0);
+    setIsZalo(1);
+    console.log('zalo');
+
+  }
+
+
   return (
     <>
       <div className='center'>
@@ -120,23 +146,41 @@ function App() {
             <a>Contact</a>
             
             <div className='typeOfContact'>
-              <div className='con Contact-fb click-contact'>
+              <div
+              onClick={clickFacebook} 
+              className={isFacebook==1?'con Contact-fb click-contact color-click':'con Contact-fb click-contact'}
+              // className='con Contact-fb click-contact'
+              >
                 <i className="fa-brands fa-facebook"></i>
                 <a>Facebook</a>
               </div>
-              <div className='con Contact-email'>
+              <div
+              onClick={clickEmail}
+              className={isEmail==1?'con Contact-email color-click':'con Contact-email'}
+              // className='con Contact-email'
+              >
                 <i className="fa-solid fa-envelope"></i>
                 <a>Email</a>
               </div>
-              <div className='con Contact-Zalo'>
+              <div 
+              onClick={clickZalo}
+
+              className={isZalo==0?'con Contact-Zalo ':'con Contact-Zalo color-click'}>
                 <a>Zalo</a>
               </div>
             </div>
               
-              <div className='link link-fb'>
+              <div
+              className={isFacebook==0?'link link-fb display-none' :'link link-fb'}
+               >
                 <img src={linkFb}></img>
               </div>
-              <div className='link link-Email'>
+              <div 
+              className={isEmail==0?'link link-email display-none':'link link-email'}>
+                <img src={linkEmail}></img>
+              </div>              
+              <div 
+              className={isZalo==0?'link link-zalo display-none':'link link-zalo'}>
                 <img src={linkZalo}></img>
               </div>
               {/* <div className='link link-fb'>

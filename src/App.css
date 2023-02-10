@@ -9,7 +9,7 @@ a{
     width: 1008px;
     padding: 0 16px 16px 16px;
     background-color: #cdf1ff;
-    height: 2480px;
+    height: 2423px;
     /* height: 2000px; */
     /* border: 1px solid #000; */
 
@@ -313,10 +313,6 @@ a{
 }
 .click-contact{
     background-color: #71d9ff;
-
-
-
-
 }
 .link-Email{
     display: none;
@@ -339,22 +335,25 @@ a{
 .Footer{
     background-color: #fff;
     border-radius: 20px;
-    height: 240px;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
     display: flex;
-    justify-content: space-between;padding-top: 64px;
-    padding-left: 64px;padding-right: 64px;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
 }
 .Footer a{
-    font-size: 20px;
+    font-size: 16px;
 }
 .other-contact{
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-top: 88px;right: 74px;
+    padding-top: 150px;
+    right: 74px;
 }
 .other-contact a{
     /* font-family: "Font Awesome 6 Free"; */
@@ -389,15 +388,35 @@ a{
     display: flex;
     flex-direction: column;
 }
+.color-click{
+    background-color: #71d9ff;
+}
+.display-none{
+    display: none;
+}
+.Contact-fb:hover{
+    background-color: #71d9ff;
+    cursor: pointer;
+}
+.Contact-email:hover{
+    background-color: #71d9ff;
+    cursor: pointer;
+}
+.Contact-Zalo:hover{
+    background-color: #71d9ff;
+    cursor: pointer;
+}
+.view:hover{
+    cursor: pointer;
 
-
+}
 
 @media screen and (max-width:46.1875em){
     .myCv{
         width: 1008px;
         padding: 0 8px 16px 8px;
         background-color: #cdf1ff;
-        height: 3388px;
+        height: 3477px;
         /* height: 2000px; */
         /* border: 1px solid #000; */
     
@@ -472,7 +491,7 @@ a{
 }
 @media screen and (max-width:31.25em){
     .myCv{
-        height: 3260px;
+        height: 3392px;
     }
     .nav{
         display: none;
