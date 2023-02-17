@@ -6,6 +6,7 @@ import post from './img/post.png'
 import linkFb from './img/linkFb.png'
 import linkZalo from './img/linkZalo.png'
 import linkEmail from './img/linkEmail.png'
+import call from './img/call.png'
 import './App.css';
 import { useState } from 'react'
 function App() {
@@ -39,7 +40,7 @@ function App() {
       <div className='myCv'>
         <div className='header'>
           <div className='user'>
-            <a>Huy</a>
+            <a>NhatHuy</a>
           </div>
           <div className='nav'>
             <a className='toInformation'>Information</a>
@@ -52,35 +53,14 @@ function App() {
         </div>
         </div>
           <div className='content'>
-            <div className='banner'>
-              <div className='img-user w3-animate-top'>
-                <img src={imgUser}></img>
-              </div>
-              {/* <div className='user-name'>
-                <a>Nguyễn Khoa Nhật Huy</a>
-              </div> */}
-            </div>
             <div id='introduction'>
               <div className='left-intro '>
                 <img src={imgUser1}></img>
               </div>
               <div className='right-intro'>
-                <div className='name'>
-                  <a>Name :</a>
-                </div>
-                <div className='user-name'>
-                  <a>Nguyễn Khoa Nhật Huy</a>
-                </div>
-                <div className='achievement'>
-                  <a>Achievement :</a>
-                </div>
-                <div className='box-achieve'> 
-                  <div className='achieve achieve-1'>HTML</div>
-                  <div className='achieve achieve-2'>CSS</div>
-                  <div className='achieve achieve-3'>REACTjs</div>
-                  {/* <div className='achieve achieve-4'></div>
-                  <div className='achieve achieve-5'></div>
-                  <div className='achieve achieve-6'></div> */}
+                <div className='introduce'>
+                  <a1>Hi, I'm Nhat Huy,</a1>
+                  <a2>I am a new developer, I am learning about front end and I will constantly improve myself. I'm working to gain experience</a2>
                 </div>
               </div>
             </div>
@@ -213,6 +193,8 @@ function App() {
                 </div>
               </div>
               <div className='get-in-touch'>
+                
+
                 <span >Get in touch</span>
                 <div className='get-in-touch-item'>
                 <a target="_blank" href='https://www.facebook.com/avoidshift3004/'>Facebook</a>

@@ -2,14 +2,14 @@
     margin: 0;padding: 0;text-decoration: none;
 }
 a{
-    color: #000;
+    color: #CED4DA;
     padding: 0px ;
 }
 .myCv{
-    width: 1008px;
+    width: 1200px;
     padding: 0 16px 16px 16px;
-    background-color: #cdf1ff;
-    height: 2423px;
+    background-color: #212529;
+    /* height: 2423px; */
     /* height: 2000px; */
     /* border: 1px solid #000; */
 
@@ -18,30 +18,36 @@ a{
     
 } */
 .center{
+    background-color: #CED4DA;
     /* background-color: aqua; */
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     /* min-width: 1080px; */
     /* max-width: 100vh; */
     display: flex;
     justify-content: center;
 }
-
+.nav a:hover{
+    color: #E9ECEF;
+}
 .user a{
+    font-size: 32px;
     padding: 10px 10px;
     height: 100%;
+    font-weight: 900;
 }
 .header-border-radius{
     background-color: #000;
 }
 .header{
+    border-radius: 20px;
     width: 100%;
     /* width: 800px; */
     /* position: fixed; */
-    height: 50px;
+    height: 75px;
     display: flex;
     justify-content: space-between;
-    background-color:  #cdf1ff;
+    background-color:  #212529;
     font-size: 20px;
     align-items: center;
     /* border-bottom-left-radius: 20px; */
@@ -62,17 +68,18 @@ a{
 
 }
 .nav a{
+    font-size: 32px;
+    font-weight: 700;
     padding: 0 15px;
 }
 .button-contact{
+    font-size: 32px;
+    font-weight: 700;
     border:none;
     padding: 0 20px;
-    height: 2rem;
-    /* width: 2rem; */
-    /* font-size: 20px; */
     border-radius: 20px;
     color: #fff;
-    background-color: #434242;
+    background-color: #CED4DA;
 }
 .button-contact:hover {
     display: none;
@@ -82,18 +89,17 @@ a{
     animation-duration: 0.75s;
 }
 @keyframes hover-contact{
-    0% {background-color: #434242; }
+    0% {background-color: #CED4DA; }
     100% {background-color: #000;padding: 0 30px;}
 }
 .content{
-    height: 300px;
     width: 100%;
     border-radius: 20px;
     font-size: 20px;
     
 }
 .banner{
-    background-color: #fff;
+    background-color: #CED4DA;
     border-radius: 20px;
     /* height: 500px; */
     border: 1px solid #000;
@@ -128,11 +134,16 @@ a{
     display: flex;
 }
 .left-intro{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+    background-color: #CED4DA;
+    /* border-radius: 20px; */
     border-right: 1px solid #000;
-    width: 300px;
 }
 .left-intro img{
-    width: 300px;height: 400px;
+    mask-repeat: no-repeat;
+    width: 500px;
     border-bottom-left-radius: 20px;
 
 
@@ -141,9 +152,25 @@ a{
     padding:16px 0 0 0px;
     display: flex;
     flex-direction: column;
+    background-color: #CED4DA;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
-.right-intro .name a{
+
+.introduce a1{
+    color: #212529;
+    font-size: 48px;
+    display: block;
+    padding-left: 16px;
+    font-weight: 800;
+}
+.introduce a2{
+    color: #212529;
+    font-size: 32px;
+    display: block;
     padding-left: 32px;
+    font-weight: 500;
 }
 .user-name{
     /* width: 500px; */
@@ -171,16 +198,19 @@ a{
     padding-left: 32px;
 }
 #Projects{
-    background-color: #fff;
+    background-color: #CED4DA;
     border-radius: 20px;
     /* height: 400px; */
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 32px;
+    margin-top: 8px;
 }
 #Projects a{
-    font-size: 30px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
 }
 
 .project{
@@ -215,6 +245,8 @@ a{
 .info-pj a{
     padding-left: 0;
     /* padding-top: 16px; */
+    font-weight: 600 !important;
+    color: #212529 !important;
     font-size: 30px;
 }
 .info-pj .user-by{
@@ -416,7 +448,7 @@ a{
         width: 1008px;
         padding: 0 8px 16px 8px;
         background-color: #cdf1ff;
-        height: 3477px;
+        /* height: 3477px; */
         /* height: 2000px; */
         /* border: 1px solid #000; */
     
@@ -491,7 +523,7 @@ a{
 }
 @media screen and (max-width:31.25em){
     .myCv{
-        height: 3392px;
+        /* height: 3392px; */
     }
     .nav{
         display: none;
