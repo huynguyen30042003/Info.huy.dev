@@ -43,13 +43,13 @@ function App() {
             <a>NhatHuy</a>
           </div>
           <div className='nav'>
-            <a className='toInformation'>Information</a>
-            <a className='toProject'>Project</a>
-            <a className='toContact'>Contact</a>
-            <a className='toFooter'>Footer</a>
+            <a target="_blank" rel="noreferrer" href='#introduction' className='toInformation'>Information</a>
+            <a target="_blank" rel="noreferrer" href='#Projects' className='toProject'>Project</a>
+            <a target="_blank" rel="noreferrer" href='#Contact-information' className='toContact'>Contact</a>
+            <a target="_blank" rel="noreferrer" href='#Footer' className='toFooter'>Footer</a>
           </div>
           <div className='contact'>
-            <button className='button-contact '>Contact me</button>
+            <button href='#Contact-information' className='button-contact '>Contact me</button>
         </div>
         </div>
           <div className='content'>
@@ -71,9 +71,9 @@ function App() {
                   <div className='info-pj'>
                     <a>Notes</a>
                     <div className='user-by'>
-                      <div className='user-by1'>HTML</div>
-                      <div className='user-by2'>CSS</div>
-                      <div className='user-by3'>REACTjs</div>
+                      <div className='user-by-de user-by1'>HTML</div>
+                      <div className='user-by-de user-by2'>CSS</div>
+                      <div className='user-by-de user-by3'>REACTjs</div>
                     </div>
                     <div className='view'>
                       <a>View now</a>
@@ -89,9 +89,9 @@ function App() {
                   <div className='info-pj'>
                     <a>Convert</a>
                     <div className='user-by'>
-                      <div className='user-by1'>HTML</div>
-                      <div className='user-by2'>CSS</div>
-                      <div className='user-by3'>REACTjs</div>
+                      <div className='user-by-de user-by1'>HTML</div>
+                      <div className='user-by-de user-by2'>CSS</div>
+                      <div className='user-by-de user-by3'>REACTjs</div>
                     </div>
                     <div className='view'>
                       <a>View now</a>
@@ -107,9 +107,9 @@ function App() {
                   <div className='info-pj'>
                     <a>Post-demo</a>
                     <div className='user-by'>
-                      <div className='user-by1'>HTML</div>
-                      <div className='user-by2'>CSS</div>
-                      <div className='user-by3'>REACTjs</div>
+                      <div className='user-by-de user-by1'>HTML</div>
+                      <div className='user-by-de user-by2'>CSS</div>
+                      <div className='user-by-de user-by3'>REACTjs</div>
                     </div>
                     <div className='view'>
                       <a>View now</a>
@@ -123,7 +123,7 @@ function App() {
             </div>
             <div id='Contact-information'>
             <div className='boxContact'>
-            <a>Contact</a>
+            <a className='contact-a'>Contact</a>
             
             <div className='typeOfContact'>
               <div
@@ -176,7 +176,7 @@ function App() {
               </div>
             </div>
             </div>
-            <div className='Footer'>
+            <div className='Footer' id='Footer'>
               <div className='footer-left'>
                   <a>nguyenkhoanhathuy</a>
                   <div className='send'>

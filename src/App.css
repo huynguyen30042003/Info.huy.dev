@@ -78,16 +78,15 @@ a{
     border:none;
     padding: 0 20px;
     border-radius: 20px;
-    color: #fff;
+    color: #212529;
     background-color: #CED4DA;
 }
-.button-contact:hover {
-    display: none;
+/* .button-contact:hover {
     animation-name: hover-contact;
     background-color: #ccc;
     color: #fff;
     animation-duration: 0.75s;
-}
+} */
 @keyframes hover-contact{
     0% {background-color: #CED4DA; }
     100% {background-color: #000;padding: 0 30px;}
@@ -204,15 +203,20 @@ a{
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
-    padding: 32px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+
     margin-top: 8px;
 }
 #Projects a{
     font-size: 48px;
     font-weight: 800;
-    color: #fff;
+    color: #E9ECEF;
 }
-
+.pj-a:hover{
+    color: #495057 !important;
+}
 .project{
     padding-top: 32px;
     padding-left: 32px;
@@ -232,7 +236,6 @@ a{
     font-size: 20px;
 }
 .project .info{
-    height: 208px;
 }
 .project .info-pj {
     display: flex;
@@ -254,9 +257,12 @@ a{
     display: flex;
     padding: 0px;
 }
+.user-by a{
+    color: #212529;
+}
 .info-pj .user-by1{
     padding-right: 10px;
-    background-color: #71d9ff;
+    background-color: #ADB5BD;
     padding: 10px;
     border-radius: 12px;
     font-size: 20px;
@@ -264,7 +270,7 @@ a{
 .info-pj .user-by2{
     margin-left: 12px;
     padding-right: 10px;
-    background-color: #71d9ff;
+    background-color: #ADB5BD;
     padding: 10px;
     border-radius: 12px;
     font-size: 20px;
@@ -272,26 +278,30 @@ a{
 .info-pj .user-by3{
     margin-left: 12px;
     padding-right: 10px;
-    background-color: #71d9ff;
+    background-color: #ADB5BD;
     padding: 10px;
     border-radius: 12px;
     font-size: 20px;
 }
-
+.user-by-de:hover {
+    background-color: #495057;
+    color: #E9ECEF;
+}
 .info .view a{
     margin-left: 0px;
     padding: 5px 10px;
     border-radius: 12px;
-
-    background-color: #00abdf;
+    background-color: #6C757D;
 }
 .info .view a:hover{
+    background-color: #495057;
+    color: #CED4DA !important;
     animation-name: hover-view;
-    padding: 3px 8px;
-    border: #cdf1ff solid 5px;
 }
 .project .view-pj{
     width: 338.88px;
+    display: flex;
+    align-items: center;
 }
 .project .view-pj img{
     margin: 10px;
@@ -300,7 +310,7 @@ a{
     border: #000 solid 2px;
 }
 #Contact-information{
-    background-color: #fff;
+    background-color: #CED4DA;
     border-radius: 20px;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -312,15 +322,20 @@ a{
     left: 0;
     position: relative;
     padding-bottom: 32px;
-
+    margin-top: 8px;
 }
 #Contact-information a{
-    font-size: 30px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #E9ECEF;
 }
 #Contact-information h1{
     font-size: 20px;
     padding-top: 24px;
     font-weight: normal;
+}
+.contact-a:hover{
+    color: #495057 !important;
 }
 .typeOfContact{
     padding-top: 16px;
@@ -328,7 +343,8 @@ a{
     padding-left: 32px;
 }
 .con{
-    padding: 5px 10px;
+    padding: 10px;
+    color: #212529;
 }
 .con a{
     font-size: 20px !important;
@@ -336,7 +352,7 @@ a{
 
 }
 .con{
-    background-color: #cdf1ff;
+    background-color: #ADB5BD;
     border-radius: 12px;
     margin-left: 8px;
 }
@@ -350,22 +366,21 @@ a{
     display: none;
 }
 .Contact-fb{
-    background-color: #cdf1ff;
+    background-color: #ADB5BD;
 }
 .Contact-email:hover ~ .link-fb{
     display: none;
 }
 .link{
     padding-left: 32px;
-    width: 200px;
-    height: 200px;
+    padding-top: 32px;
 }
 .link img{
     height: 200px;
     width: 200px;
 }
 .Footer{
-    background-color: #fff;
+    background-color: #CED4DA;
     border-radius: 20px;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
@@ -376,9 +391,11 @@ a{
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 32px;
+    margin-top: 8px;
 }
 .Footer a{
-    font-size: 16px;
+    font-size: 24px;
+    color: #495057;
 }
 .other-contact{
     position: absolute;
@@ -386,11 +403,14 @@ a{
     flex-direction: column;
     padding-top: 150px;
     right: 74px;
+    bottom: 32px;
 }
 .other-contact a{
     /* font-family: "Font Awesome 6 Free"; */
 
-    font-size: 16px !important;
+    font-size: 24px !important;
+    color: #495057 !important;
+    font-weight: 600 !important;
 }
 .email-add{
     font-size: 16px;
@@ -421,26 +441,38 @@ a{
     flex-direction: column;
 }
 .color-click{
-    background-color: #71d9ff;
+    background-color: #495057;
+    color: #E9ECEF !important;
+}
+.color-click a{
+    color: E9ECEF;
+
 }
 .display-none{
     display: none;
 }
 .Contact-fb:hover{
-    background-color: #71d9ff;
+    background-color: #495057;
+    color: #E9ECEF !important;
     cursor: pointer;
 }
 .Contact-email:hover{
-    background-color: #71d9ff;
+    background-color: #495057;
+    color: #E9ECEF !important;
     cursor: pointer;
 }
 .Contact-Zalo:hover{
-    background-color: #71d9ff;
+    background-color: #495057;
+    color: #E9ECEF !;
     cursor: pointer;
 }
 .view:hover{
     cursor: pointer;
 
+}
+.Footer span{
+    font-size: 24px;
+    color: #495057;
 }
 
 @media screen and (max-width:46.1875em){
@@ -495,6 +527,7 @@ a{
         width: 100%; */
     }
     .pj-a{
+
 
     }
     .boxContact{
