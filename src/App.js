@@ -40,7 +40,9 @@ function App() {
       <div className='myCv'>
         <div className='header'>
           <div className='user'>
+            <div className='sign'>
             <a>NhatHuy</a>
+            </div>
           </div>
           <div className='nav'>
             <a target="_blank" rel="noreferrer" href='#introduction' className='toInformation'>Information</a>

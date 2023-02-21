@@ -17,6 +17,15 @@ a{
 /* .main{
     
 } */
+.sign{
+    padding-bottom: 0 10px !important;
+}
+.sign a:hover{
+    padding: 0 10px;
+    color: #E9ECEF;
+    box-shadow: 0 8px 8px -8px lightblue;
+
+}
 .center{
     background-color: #CED4DA;
     /* background-color: aqua; */
@@ -29,6 +38,7 @@ a{
 }
 .nav a:hover{
     color: #E9ECEF;
+    box-shadow: 0 8px 8px -8px lightblue;
 }
 .user a{
     font-size: 32px;
@@ -123,8 +133,7 @@ a{
     to{top:0px}
 }
 #introduction{
-    background-color: red;
-    background-color: #fff;
+    background-color: #CED4DA;
     border-radius: 20px;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -307,6 +316,7 @@ a{
     margin: 10px;
     height:  180px;
     border-radius: 20px;
+    box-shadow: 10px 20px 10px  #495057 ;
     border: #000 solid 2px;
 }
 #Contact-information{
@@ -474,12 +484,19 @@ a{
     font-size: 24px;
     color: #495057;
 }
-
+@media screen and (max-width:65.625rem){
+    .button-contact {
+        display: none;
+    }
+}
 @media screen and (max-width:46.1875em){
+    .nav{
+        display: none;
+    }
     .myCv{
         width: 1008px;
         padding: 0 8px 16px 8px;
-        background-color: #cdf1ff;
+        background-color: #212529;
         /* height: 3477px; */
         /* height: 2000px; */
         /* border: 1px solid #000; */
@@ -497,6 +514,7 @@ a{
     }
     .left-intro img{
         border-bottom-left-radius: 0;
+        width: 100%;
     }
     .right-intro{
         display: flex;
@@ -545,7 +563,7 @@ a{
         padding-left: 32px;
     }
     .user{
-        display: none;
+        display: block;
     }
 
     .img-user img{
@@ -555,6 +573,9 @@ a{
 
 }
 @media screen and (max-width:31.25em){
+    .sign{
+        display: block;
+    }
     .myCv{
         /* height: 3392px; */
     }
