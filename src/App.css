@@ -143,11 +143,10 @@ a{
 }
 .left-intro{
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-
     background-color: #CED4DA;
-    /* border-radius: 20px; */
-    border-right: 1px solid #000;
 }
 .left-intro img{
     mask-repeat: no-repeat;
@@ -163,6 +162,8 @@ a{
     background-color: #CED4DA;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
 
 }
 
@@ -225,6 +226,8 @@ a{
 }
 .pj-a:hover{
     color: #495057 !important;
+    box-shadow: 0 8px 8px -8px #495057;
+
 }
 .project{
     padding-top: 32px;
@@ -346,6 +349,8 @@ a{
 }
 .contact-a:hover{
     color: #495057 !important;
+    box-shadow: 0 8px 8px -8px #495057;
+
 }
 .typeOfContact{
     padding-top: 16px;
@@ -484,6 +489,10 @@ a{
     font-size: 24px;
     color: #495057;
 }
+.footer-right a ,
+.footer-right span{
+    padding: 0 5px;
+}
 @media screen and (max-width:65.625rem){
     .button-contact {
         display: none;
@@ -505,7 +514,7 @@ a{
     .banner{
     }
     #introduction{
-        flex-direction:column-reverse;
+        flex-direction:column;
         align-items: center;
 
     }
@@ -570,9 +579,15 @@ a{
         width: 90vw;
         height: 90vw;
     }
+    .button-contact {
+        display: block;
+    }
 
 }
 @media screen and (max-width:31.25em){
+    .button-contact {
+        display: block;
+    }
     .sign{
         display: block;
     }
@@ -618,6 +633,7 @@ a{
         padding: 16px;
     }
     .project .view-pj img{
+        width: 100% !important;
         margin: 0;
     }
     .project .view-pj{
